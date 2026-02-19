@@ -26,11 +26,12 @@ Relaunch BBEdit to activate.
 
 ## Color Groups
 
-The CLM defines four keyword groups, each mapped to a different BBEdit color run:
+The CLM defines five keyword groups, each mapped to a different BBEdit color run:
 
 | Group | RunKind | Contents |
 |-------|---------|----------|
-| Control flow | `file-include` | `if`, `else`, `true`, `false` |
+| Control flow | `file-include` | `if`, `else`, `true`, `false`, `var`, `return`, `empty`, `failed` |
+| Types | `preprocessor` | `boolean`, `color`, `date`, `dictionary`, `interval`, `list`, `number`, `set`, `string` |
 | System attributes | `keyword` | `$Name`, `$Color`, `$Rule`, ... |
 | Operators | `predefined-symbol` | `collect`, `find`, `replace`, ... |
 | Designators | `variable` | `this`, `parent`, `children`, ... |
@@ -44,6 +45,27 @@ The module activates for files matching `*.tbxc`. To use it with other file exte
 ## Reference Lookup
 
 Selecting a keyword and using **Search > Find in Reference** (or its keyboard shortcut) searches [A Tinderbox Reference File](https://atbref.com/atbref11/) via DuckDuckGo.
+
+## Prism.js (Web Syntax Highlighting)
+
+A [Prism.js](https://prismjs.com/) language definition is included for syntax-highlighting Tinderbox action code on the web (blogs, documentation, etc.).
+
+Add the script after the Prism core:
+
+```html
+<script src="prism-core.min.js"></script>
+<script src="prism-tinderbox.js"></script>
+```
+
+Then use the `language-tinderbox` class on your code blocks:
+
+```html
+<pre><code class="language-tinderbox">
+if($Prototype == "Task") {
+   $Color = "red";
+}
+</code></pre>
+```
 
 ## Credits
 
