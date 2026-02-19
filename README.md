@@ -50,10 +50,11 @@ Selecting a keyword and using **Search > Find in Reference** (or its keyboard sh
 
 A [Prism.js](https://prismjs.com/) language definition is included for syntax-highlighting Tinderbox action code on the web (blogs, documentation, etc.).
 
-Add the script after the Prism core:
+Add the script after the Prism core. You can use the [jsdelivr CDN](https://www.jsdelivr.com/package/npm/prismjs) for Prism itself:
 
 ```html
-<script src="prism-core.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.min.css">
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
 <script src="prism-tinderbox.js"></script>
 ```
 
