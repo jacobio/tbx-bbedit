@@ -6,7 +6,7 @@ A [BBEdit Codeless Language Module](https://www.barebones.com/support/develop/cl
 
 - **Syntax highlighting** for Tinderbox action code in `.tbxc` files
 - **400+ system attributes** (`$Name`, `$Color`, `$Rule`, etc.)
-- **220+ action functions** (`collect`, `find`, `linkedTo`, `replace`, etc.)
+- **220+ operators** (`collect`, `find`, `linkedTo`, `replace`, etc.)
 - **30 designators** — item (`this`, `parent`, `child`), group (`children`, `descendants`, `all`), and link (`source`, `destination`)
 - **Control flow keywords** (`if`, `else`, `true`, `false`)
 - **Comment highlighting** for Tinderbox's `//comment//` syntax
@@ -32,7 +32,7 @@ The CLM defines four keyword groups, each mapped to a different BBEdit color run
 |-------|---------|----------|
 | Control flow | `file-include` | `if`, `else`, `true`, `false` |
 | System attributes | `keyword` | `$Name`, `$Color`, `$Rule`, ... |
-| Action functions | `predefined-symbol` | `collect`, `find`, `replace`, ... |
+| Operators | `predefined-symbol` | `collect`, `find`, `replace`, ... |
 | Designators | `variable` | `this`, `parent`, `children`, ... |
 
 Colors for each group can be customized in **BBEdit > Settings > Text Colors**.
