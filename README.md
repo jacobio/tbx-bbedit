@@ -18,6 +18,8 @@ A [BBEdit Codeless Language Module](https://www.barebones.com/support/develop/cl
 
 ### 1. Install script
 
+Run the following command in Terminal:
+
 ```sh
 curl -fsSL https://raw.githubusercontent.com/jacobio/tbx-bbedit/main/install.sh | sh
 ```
