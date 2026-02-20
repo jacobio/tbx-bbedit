@@ -16,11 +16,23 @@ A [BBEdit Codeless Language Module](https://www.barebones.com/support/develop/cl
 
 ## Installation
 
+### 1. Install script
+
 ```sh
 curl -fsSL https://raw.githubusercontent.com/jacobio/tbx-bbedit/main/install.sh | sh
 ```
 
-Or clone the repo and run `./install.sh` — this creates a symlink so updates via `git pull` are picked up automatically.
+### 2. Download
+
+Download [`Tinderbox.plist`](https://github.com/jacobio/tbx-bbedit/releases/latest/download/Tinderbox.plist) from the latest release and copy it to:
+
+```
+~/Library/Application Support/BBEdit/Language Modules/
+```
+
+### 3. Clone
+
+Clone the repo and run `./install.sh` — this creates a symlink so updates via `git pull` are picked up automatically.
 
 Relaunch BBEdit to activate.
 
@@ -45,28 +57,6 @@ The module activates for files matching `*.tbxc`. To use it with other file exte
 ## Reference Lookup
 
 Selecting a keyword and using **Search > Find in Reference** (or its keyboard shortcut) searches [A Tinderbox Reference File](https://atbref.com/atbref11/) via DuckDuckGo.
-
-## Prism.js (Web Syntax Highlighting)
-
-A [Prism.js](https://prismjs.com/) language definition is included for syntax-highlighting Tinderbox action code on the web (blogs, documentation, etc.).
-
-Add the script after the Prism core. You can use the [jsdelivr CDN](https://www.jsdelivr.com/package/npm/prismjs) for Prism itself:
-
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.min.css">
-<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
-<script src="prism-tinderbox.js"></script>
-```
-
-Then use the `language-tinderbox` class on your code blocks:
-
-```html
-<pre><code class="language-tinderbox">
-if($Prototype == "Task") {
-   $Color = "red";
-}
-</code></pre>
-```
 
 ## Credits
 
